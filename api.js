@@ -57,10 +57,10 @@ app.get('/api/uat', (c) => {
   return c.json(results);
 });
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 console.log(`🚀 Server is running on http://localhost:${port}`);
 
 serve({
   fetch: app.fetch,
-  port
+  port: Number(port)
 });
