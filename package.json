@@ -1,0 +1,21 @@
+{
+  "name": "lista-primarii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pipeline.js",
+  "type": "module",
+  "scripts": {
+    "import": "node pipeline.js",
+    "start": "node api.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.12",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-parser": "^3.0.0",
+    "hono": "^4.12.10",
+    "iconv-lite": "^0.7.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1"
+  }
+}
