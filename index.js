@@ -9,8 +9,9 @@ let data = [];
 const loadData = async () => {
   if (data.length > 0) return data;
   try {
-    // Vercel filesystem access
+    // Attempt to load from current directory
     const filePath = path.join(process.cwd(), 'uat_enriched_final.json');
+    console.log('Loading data from:', filePath);
     const fileContent = await readFile(filePath, 'utf-8');
     data = JSON.parse(fileContent);
     return data;
